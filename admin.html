@@ -1,0 +1,61 @@
+<html>
+<head>
+    <script>
+        function View() {
+            var u = document.getElementById("fname");
+            alert (" Your Password is " + u.value);
+        }
+        function UpCase(){
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+        function hovin()
+        {
+            var e = document.getElementById('hover');
+            e.style = "background-color: rgb(255, 0, 255);height: 30px; width: 100px;";
+            
+        }
+        function hovout()
+        {
+            var e = document.getElementById('hover');
+            e.style = "background-color: rgb(0, 4, 255);height: 30px; width: 100px;"; 
+        }
+
+</script>
+</head>
+<body style="color: rgb(40, 5, 48); font-size: large;">
+    
+    <h1 style="text-align: center;">Demo Login Page</h1> <br> <hr>
+
+    <p style="color: rgb(60, 0, 139);">Enter your name: <input type = "text" id = "pname" onkeyup="UpCase()"></p>
+
+    <p style="color: rgb(60, 0, 139);">Enter your Password: <input type = "password" id = "fname" onkeyup="UpCase()">
+    <button type = "button" onclick="View()">View </button></p>
+
+    <p style="color: rgb(60, 0, 139);">Enter your birth date: <input type="date" id="date"> </p>
+
+    <p style="color: rgb(60, 0, 139);">select language
+
+    <select name = "option">
+        <option value = "a"> English</option>
+        <option value = "b"> Hindi</option>
+        <option value = "c"> Marathi</option>
+    </select>
+    
+    </p>
+
+    <hr>
+
+    <button type = "button"  onclick = "location.href = 'https://en.wikipedia.org/wiki/Burj_Khalifa'"> <img src="C:\Users\Dewan\Downloads\burj.jpg"  alt="Website" height="500px" width="750px" onmouseover="hovin()" onmouseleave="hovout()">  </button> <br>
+    *click to know more<br>
+
+    <hr>
+
+    <p>Search Engines : </p>
+    <button type = "button" onclick="location.href = 'https://www.google.com/'"> <img src="C:\Users\Dewan\Downloads\google.jpg" alt="Website" height="50px" width="50px">  </button>
+    <button type = "button" onclick="location.href = 'https://duckduckgo.com/'"> <img src="C:\Users\Dewan\Downloads\duck.jpg" alt="Website" height="50px" width="50px">  </button>
+    <button type = "button" onclick="location.href = 'https://in.search.yahoo.com/'"> <img src="C:\Users\Dewan\Downloads\yahoo.png" alt="Website" height="50px" width="50px">  </button>
+    <button type = "button" onclick="location.href = 'https://www.bing.com/'"> <img src="C:\Users\Dewan\Downloads\bing.png"; alt="Website" height="50px" width="50px">  </button>
+    
+</body>
+</html>
